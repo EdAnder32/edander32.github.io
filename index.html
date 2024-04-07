@@ -99,7 +99,8 @@
             var senha = document.getElementById("senha").value;
 
             if (usuario === "ed" && senha === "1234") {
-                window.location.href = "https://192.168.8.130";
+                var ipDoEsp = '192.168.8.130';
+                window.location.href = 'http://' + ipDoEsp;
                 return false; // Prevent form submission
             } else {
                 document.getElementById("errorMessage").style.display = "block";
